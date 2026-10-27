@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Job<span>Finder</span></h1>
+    <p>Find your dream job today!</p>
+    <nav>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <section class="search">
+    <input id="keyword" type="text" placeholder="Job title or company">
+    <input id="location" type="text" placeholder="Enter location">
+    <button onclick="searchJobs()">Search Jobs</button>
+  </section>
+
+  <main>
+    <h2>Latest Jobs</h2>
+    <p id="count">Available jobs</p>
+    <div id="jobList" class="job-list"></div>
+  </main>
+
+  <footer>
+    <p>© 2026 JobFinder | Find your future</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

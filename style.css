@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #222;
+}
+
+header {
+  position: relative;
+  background: linear-gradient(135deg, #173b72, #2676b8);
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header h1 span {
+  color: #ffca55;
+}
+
+header p {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+nav {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  display: flex;
+  gap: 10px;
+}
+
+nav a {
+  color: #173b72;
+  background: #ffffff;
+  padding: 10px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #ffca55;
+  transform: translateY(-2px);
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 30px 15px;
+  background: white;
+}
+
+input {
+  padding: 12px 15px;
+  width: 240px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #2676b8;
+}
+
+button {
+  background: #2676b8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #173b72;
+}
+
+main {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+main h2 {
+  color: #173b72;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#count {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.job-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.job-card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #2676b8;
+}
+
+.job-card h3 {
+  color: #173b72;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.job-card p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.job-card button {
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.job-card .save-btn {
+  background: #ffca55;
+  color: #173b72;
+}
+
+.job-card .save-btn:hover {
+  background: #f0b735;
+}
+
+footer {
+  background: #173b72;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Login and Register pages */
+.login-box {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h2 {
+  text-align: center;
+  color: #173b72;
+  margin-bottom: 25px;
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-box input {
+  width: 100%;
+}
+
+.login-box button {
+  width: 100%;
+}
+
+.login-box p {
+  text-align: center;
+  margin-top: 18px;
+  line-height: 1.5;
+}
+
+.login-box a {
+  color: #2676b8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-box a:hover {
+  text-decoration: underline;
+}
+
+#message {
+  color: #267443;
+  font-weight: bold;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  header {
+    padding: 85px 15px 30px;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  nav {
+    top: 15px;
+    right: 15px;
+  }
+
+  .search {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search input,
+  .search button {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  main {
+    padding: 0 15px;
+  }
+
+  .login-box {
+    margin: 25px 15px;
+    padding: 25px;
+  }
+}
